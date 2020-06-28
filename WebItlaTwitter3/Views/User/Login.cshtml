@@ -1,0 +1,38 @@
+﻿@model WebItlaTwitter3.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<link href="~/css/Login.css" rel="stylesheet" />
+
+<form asp-action="Login" class="form-signin">
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">ItlaTwitter</h1>
+    </div>
+
+    <div class="form-label-group">
+        <input asp-for="NUsuario" class="form-control">
+        <label asp-for="NUsuario"></label>
+        <span asp-validation-for="NUsuario"></span>
+    </div>
+
+    <div class="form-label-group">
+        <input asp-for="Password" class="form-control">
+        <label asp-for="Password"></label>
+        <span asp-validation-for="Password"></span>
+    </div>
+
+    <div class="checkbox mb-3">
+        <label>
+            <input type="checkbox" value="remember-me"> Recordar Contraseña
+        </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesion</button>
+    <a asp-action="Register" class="btn btn-lg text-light btn-dark btn-block">Registrar</a>
+
+    <p class="mt-5 mb-3 text-muted text-center">© 2020-2020</p>
+</form>
+

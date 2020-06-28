@@ -1,0 +1,60 @@
+﻿@model IEnumerable<WebItlaTwitter3.ViewModels.UsuarioViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<p>
+    <a asp-action="Create">Crear nuevo usuario</a>
+</p>
+
+<div class="table">
+    <div class="bg-dark text-white card-header ">
+        <h1>ItlaTwitter</h1>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Nombre)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Correo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NUsuario)
+                    </th>
+
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Correo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NUsuario)
+                        </td>
+
+                        <td>
+                            <a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@item.IdUsuario">Edit</a> |
+                            <a class="btn btn-outline-info" asp-action="Details" asp-route-id="@item.IdUsuario">Details</a> |
+                            <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@item.IdUsuario">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
+</div>

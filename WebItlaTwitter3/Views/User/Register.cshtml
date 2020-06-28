@@ -1,0 +1,58 @@
+﻿@model WebItlaTwitter3.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+    <div class="card">
+        <div class="bg-dark text-light card-header">
+
+            <a asp-action="Login" class="btn btn-warning">Volver atras</a>
+            <strong>Registrarse</strong>
+        </div>
+        <div class="card-body">
+
+            <form asp-action="Register" method="post">
+
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="form-label-group">
+                    <label asp-for="Nombre"></label>
+                    <input asp-for="Nombre" class="form-control">
+                    <span asp-validation-for="Nombre"></span>
+                </div>
+
+                <div class="form-label-group">
+                    <label asp-for="NUsuario"></label>
+                    <input asp-for="NUsuario" class="form-control">
+                    <span asp-validation-for="NUsuario"></span>
+                </div>
+
+                <div class="form-label-group">
+                    <label asp-for="Correo"></label>
+                    <input asp-for="Correo" class="form-control">
+                    <span asp-validation-for="Correo"></span>
+                </div>
+
+                <div class="form-label-group">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control">
+                    <span asp-validation-for="Password"></span>
+                </div>
+
+                <div class="form-label-group">
+                    <label asp-for="ConfirmPassword"></label>
+                    <input asp-for="ConfirmPassword" class="form-control">
+                    <span asp-validation-for="ConfirmPassword"></span>
+                </div>
+
+                <div class="text-center form-group">
+                    <button class="btn btn-outline-primary " type="submit">Registar Usuario</button>
+                    <button class="btn btn-outline-warning" type="reset">Limpiar</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+

@@ -1,0 +1,8 @@
+C:\Users\Dell\source\repos\WebTwitter\EmailSend\bin\Debug\netcoreapp3.1\EmailSend.deps.json
+C:\Users\Dell\source\repos\WebTwitter\EmailSend\bin\Debug\netcoreapp3.1\EmailSend.dll
+C:\Users\Dell\source\repos\WebTwitter\EmailSend\bin\Debug\netcoreapp3.1\EmailSend.pdb
+C:\Users\Dell\source\repos\WebTwitter\EmailSend\obj\Debug\netcoreapp3.1\EmailSend.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\WebTwitter\EmailSend\obj\Debug\netcoreapp3.1\EmailSend.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\WebTwitter\EmailSend\obj\Debug\netcoreapp3.1\EmailSend.AssemblyInfo.cs
+C:\Users\Dell\source\repos\WebTwitter\EmailSend\obj\Debug\netcoreapp3.1\EmailSend.dll
+C:\Users\Dell\source\repos\WebTwitter\EmailSend\obj\Debug\netcoreapp3.1\EmailSend.pdb

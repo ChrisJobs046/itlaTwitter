@@ -1,0 +1,21 @@
+.vs/
+
+# Visual Studio 2017 auto generated files
+Generated\ Files/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!?*.[Cc]ache/
+
+# Local History for Visual Studio
+.localhistory/
