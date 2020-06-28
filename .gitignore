@@ -1,5 +1,7 @@
+# Ignores
 .vs/
 bin/
+obj/
 bin/Debug/netcoreapp3.1/
 
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
